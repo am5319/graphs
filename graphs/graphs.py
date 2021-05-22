@@ -22,4 +22,3 @@ def previsitor(tree, fn, fn_parent=None):
     fn_out = fn(tree, fn_parent)
     for child in tree.children:
         previsitor(child, fn, fn_out)
-
